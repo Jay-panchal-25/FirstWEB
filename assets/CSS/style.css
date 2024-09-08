@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  margin: 20px 60px 0px 60px;
+  margin: 20px 90px;
 }
 /*--------Navbar-----------------------------------------------------------------*/
 .navbar {
@@ -18,6 +18,7 @@ body {
   font-weight: bolder;
   color: rgb(255, 115, 0);
   margin-top: 5px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0);
 }
 
 .middleNav ul {
@@ -33,7 +34,11 @@ body {
 
 .middleNav ul li a:hover {
   color: rgb(255, 115, 0);
+  transition: color 0.3s;
   font-weight: bold;
+
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .middleNav ul li a {
@@ -57,7 +62,10 @@ body {
 
 .rightNav li a:hover {
   color: rgb(255, 115, 0);
+  transition: color 0.3s;
   font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .rightNav li a {
@@ -79,6 +87,11 @@ body {
 .rightNav input:hover {
   background-color: rgb(255, 208, 0);
   color: black;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /*--------HomeDemos-----------------------------------------------------------------*/
@@ -114,6 +127,10 @@ body {
 .leftHome input:hover {
   background-color: rgb(255, 208, 0);
   color: black;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 img {
   width: 530px;
@@ -194,4 +211,179 @@ img {
 .rightPart h3 {
   font-size: 21px;
   font-weight: bold;
+}
+/*--------Pages-----------------------------------------------------------------*/
+.Pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leftPages h2 {
+  font-size: 48px;
+  font-weight: bold;
+  padding: 0px;
+}
+.leftPages p {
+  font-size: 18px;
+}
+
+.pageBox {
+  background-color: aqua;
+  height: 419px;
+  width: 367px;
+}
+/*--------Blog-----------------------------------------------------------------*/
+.BlogHeading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bolder;
+  color: white;
+  padding-top: 40px;
+}
+
+.BlogBox {
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+.BlogContent {
+  width: 600px;
+  height: 237px;
+  text-align: center;
+  align-content: center;
+}
+
+.BlogContent h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 115, 0);
+}
+
+.BlogContent p {
+  text-align: justify;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+.blogWriter {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+
+  padding: 0px 50px;
+}
+
+.blogName h4 {
+  font-size: 18px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.blogName p {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+/*--------contact-----------------------------------------------------------------*/
+
+.contactText {
+  text-align: center;
+  justify-content: center;
+  padding: 70px 380px;
+}
+.contactText p {
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+.contactText input {
+  background-color: rgb(255, 115, 0);
+  color: white;
+  border: 0;
+  padding: 15px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0px;
+}
+.contactText input:hover {
+  background-color: rgb(255, 208, 0);
+  color: black;
+  transition: color 0.3s;
+  transition: background-color 0.3s;
+}
+
+/*--------Footer-----------------------------------------------------------------*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.leftFooter {
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: rgb(255, 115, 0);
+
+  text-shadow: 3px 3px 4px rgba(0, 0, 0);
+}
+
+.middleFooter ul {
+  display: flex;
+}
+
+.middleFooter ul li {
+  display: inline-block;
+  margin: 0px 15px;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 0px 30px;
+}
+
+.middleFooter ul li a:hover {
+  color: rgb(255, 115, 0);
+  transition: color 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.middleFooter ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.rightFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightFooter li {
+  display: inline-block;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.rightFooter li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.rightFooter img {
+  height: 20px;
+  width: 20px;
+}
+
+.rightFooter img:hover {
+  transform: scale(2.1);
 }
