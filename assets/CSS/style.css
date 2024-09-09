@@ -493,8 +493,9 @@ img {
 .rightFooter img:hover {
   transform: scale(2.1);
 }
-/*---------------- Mobile view---------------------------------- */
-@media screen and (max-width: 768px) {
+/*---------------- Mobile view ---------------------------------- */
+/* it is perfect work for 400+ width only */
+@media screen and (max-width: 500px) {
   /* Mobile view */
   body {
     display: flex;
