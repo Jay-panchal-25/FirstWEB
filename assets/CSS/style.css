@@ -332,13 +332,16 @@ img {
   color: white;
   padding-top: 40px;
 }
-
+.BlogWrapper {
+  display: flex;
+  margin: 0px 100px;
+}
 .BlogBox {
   align-items: center;
-  justify-content: space-evenly;
   background-color: white;
   border-radius: 20px;
   padding: 20px;
+  margin-right: 90px;
 }
 .BlogContent {
   width: 600px;
@@ -365,9 +368,8 @@ img {
   display: flex;
   align-items: center;
   color: white;
-  justify-content: space-between;
-
   padding: 0px 50px;
+  margin-left: 150px;
 }
 
 .blogWriter img {
@@ -576,15 +578,24 @@ img {
   }
   /*---about---*/
 
-  #time {
-    display: none;
-  }
-  #private {
-    display: none;
-  }
   .about {
     height: 322px;
   }
+  .wrapper {
+    height: 155px;
+    width: 370px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: 20px;
+  }
+  .box {
+    height: 155px;
+    width: 323px;
+    margin: 0px;
+    margin-right: 50px;
+  }
+
   /*---pages---*/
   .Pages {
     display: flex;
@@ -600,5 +611,69 @@ img {
   }
   .leftPages p {
     font-size: 21px;
+  }
+  /*---Blog---*/
+  .BlogHeading {
+    font-size: 40px;
+  }
+  .BlogWrapper {
+    margin: 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .BlogBox {
+    padding: 20px;
+    margin-right: 50px;
+    width: 310px;
+  }
+  .BlogContent {
+    width: 310px;
+    height: 275px;
+  }
+  .BlogContent h3 {
+    font-size: 25px;
+  }
+
+  .BlogContent p {
+    font-size: 17px;
+  }
+  #BlogBox2 {
+    margin-right: 0px;
+  }
+  .blogWriter {
+    margin-left: 0px;
+  }
+  /*---contact---*/
+
+  .contactText {
+    padding: 0px;
+  }
+  .contactText p {
+    font-size: 37px;
+
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftFooter {
+    text-align: center;
+  }
+  .middleFooter ul {
+    padding: 0px;
+  }
+
+  .leftFooter a {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .middleFooter ul li {
+    padding: 0px 3px;
+  }
+
+  .rightFooter {
+    justify-content: center;
   }
 }
